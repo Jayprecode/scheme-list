@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Scheme List</title>
+	</head>
+	<body>
+		<div class="s__container">
+			<div class="s__card">
+				<div class="s__content">
+					<span class="s__title">Scheme List</span>
+					<form id="s__form">
+						<div class="input-field">
+							<input type="text" name="task" id="scheme" />
+							<label for="task">New Task</label>
+						</div>
+						<input type="submit" value="Add Task" class="btn" />
+					</form>
+				</div>
+				<div class="s__action">
+					<h5 id="s__title">Task</h5>
+					<div class="input-field">
+						<input type="text" name="filter" id="s__filter" />
+						<label for="filter">Filter Tasks</label>
+					</div>
+					<ul class="s__collection"></ul>
+					<a href="#" class="clear__scheme btn black">Clear Tasks</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
