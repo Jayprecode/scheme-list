@@ -53,6 +53,71 @@ body {
     border-radius: 15px;
     box-shadow: -15px 13px 2px -1px rgba(0,0,0,0.35);
 }
+.s__card:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.effect-1,
+.effect-2,
+.effect-3,
+.effect-4 {
+  display: none;
+  mix-blend-mode: multiply;
+  height: 80%;
+  opacity: 1;
+  position: absolute;
+  width: 80%;
+  z-index: 0;
+}
+
+.effect-1 {
+  animation: rotate 2.5s linear infinite;
+  background: #1391f1;
+}
+
+.effect-2 {
+  animation: rotate 2s linear reverse infinite;
+  background: #02020295;
+}
+.effect-3 {
+  animation: rotate 1.5s linear reverse infinite;
+  background: #a36efd;
+}
+.effect-4 {
+  animation: rotate 1s linear reverse infinite;
+  background: #bb3662;
+}
+.s__container:hover .effect-1,
+.s__container:hover .effect-2,
+.s__container:hover .effect-3,
+.s__container:hover .effect-4 {
+  display: block;
+}
+@keyframes rotate {
+  0% {
+    top: 0;
+    left: 8%;
+  }
+  25% {
+    top: 8%;
+    left: 0%;
+  }
+  50% {
+    top: 16%;
+    left: 8%;
+  }
+  75% {
+    top: 8%;
+    left: 16%;
+  }
+  100% {
+    top: 0;
+    left: 8%;
+  }
+}
 .s__card .s__content {
     padding: 24px;
 }
@@ -127,7 +192,7 @@ input[type=text]:not(.browser-default)+label:after {
 .btn {
     text-decoration: none;
     color: #fff;
-    background-color: #1b867c;
+    background-color: #44178D;
     text-align: center;
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     letter-spacing: .5px;
@@ -148,8 +213,8 @@ input[type=text]:not(.browser-default)+label:after {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 .btn:hover {
-    background-color: #2bbbab;
-        box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.22), 0 3px 1px -1px rgba(0,0,0,0.2);
+    background-color: #722ab9;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.22), 0 3px 1px -1px rgba(0,0,0,0.2);
 }
 .black {
     background-color: #000 !important;
